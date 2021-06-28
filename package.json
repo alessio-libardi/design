@@ -1,0 +1,31 @@
+{
+  "name": "@wonderflow/design",
+  "description": "The Wonderflow Design System website.",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Wonderflow",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonderflow-bv/design.git"
+  },
+  "keywords": [
+    "design-system",
+    "wonderflow",
+    "website"
+  ],
+  "bugs": {
+    "url": "https://github.com/wonderflow-bv/design/issues"
+  },
+  "homepage": "https://github.com/wonderflow-bv/design#readme",
+  "scripts": {
+    "start": "next dev",
+    "build": "next build && next export -o dist"
+  },
+  "dependencies": {
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {}
+}
