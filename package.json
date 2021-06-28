@@ -26,7 +26,8 @@
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint \"src/**/*.js\"",
     "lint:styles": "stylelint \"src/**/*.css\"",
-    "lint:commits": "commitlint --edit"
+    "lint:commits": "commitlint --edit",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "11.0.1",
@@ -45,6 +46,7 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
+    "husky": "^6.0.0",
     "postcss": "^8.3.5",
     "postcss-preset-env": "^6.7.0",
     "prettier": "2.3.2",
