@@ -1,6 +1,8 @@
 name: Continous Deployment
 
-on: workflow_dispatch
+on:
+  release:
+    types: [released]
 
 jobs:
   install:
