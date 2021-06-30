@@ -5,26 +5,19 @@ on:
     types: [opned, edited, reopened]
 
 jobs:
-  lint-pull-request-title:
-    name: Semantic Pull Request Title
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-
-      - name: Lint Pull Request Title
-        uses: amannn/action-semantic-pull-request@v3.4.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  lint-pull-request-commits:
-    name: Semantic Pull Request Commits
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
+      - name: Lint Pull Request Title
+        uses: amannn/action-semantic-pull-request@v3.4.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Lint Pull Request Commits
         uses: wagoid/commitlint-github-action@v3
