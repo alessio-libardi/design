@@ -2,7 +2,7 @@ name: 'Semantic Pull Request'
 
 on:
   pull_request:
-    types: [opned, edited, reopened]
+    types: [opned, edited, reopened, synchronize]
 
 jobs:
   lint:
