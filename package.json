@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wonderflow-bv/design.git"
+    "url": "https://github.com/alessio-libardi/design.git"
   },
   "keywords": [
     "design-system",
@@ -15,9 +15,9 @@
     "website"
   ],
   "bugs": {
-    "url": "https://github.com/wonderflow-bv/design/issues"
+    "url": "https://github.com/alessio-libardi/design/issues"
   },
-  "homepage": "https://github.com/wonderflow-bv/design#readme",
+  "homepage": "https://github.com/alessio-libardi/design#readme",
   "scripts": {
     "start": "next dev",
     "build": "next build && next export -o dist",
